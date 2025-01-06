@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="picture/let-py.jpg" type="image/png" class="logo">
+  <link rel="stylesheet" href="python.css">
+  <link rel="stylesheet" href="home-style.css">
+  <title>Let Me Code</title>
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <div class="let-me-code">
+        <a href="index.html">
+          <p class="name-let">Let Me Code</p>
+        </a>
+      </div>
+      <div class="back-color">
+        <div class="color-changer"></div>
+        <div class="user-logo"></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main-container">
+      <div class="assistant">
+        <button class="btn">Assistant</button>
+      </div>
+      <div class="content-open">
+        Home / python / Functions
+      </div>
+      <h1 class="heading-1">Functions</h1>
+
+      <div class="bottom-function">
+        <h2 class="function">Functions</h2>
+        <p class="func">
+          Functions are reusable blocks of code that perform specific tasks. They help you organize your programs,
+          improve readability, and make your code more modular. This means you can break down complex tasks into
+          smaller, manageable units.
+        </p>
+        <p class="strg">
+          <strong>1. Defining Functions</strong>
+        </p>
+        <ul>
+          <li>
+            Functions are difined using the def keyword followed by the function name,parentheses (), and colon&colon;.
+          </li>
+          <li>
+            The code block inside the function is indented.
+          </li>
+          <li>You can pass arguments (inputs) to a function, and it can return a value (output)</li>
+        </ul>
+        <p class="strg"><strong>Example:</strong></p><div class="py-codes"><code><span class="violet">def </span><span class="blue">greet </span><span class="black">(</span><span class="black"> name </span><span class="black">) </span><span class="black"> &colon; </span><span>  </span><span>  </span>
+     <span class="violet">print </span><span class="black">(</span><span class="green">f"Hello,</span><span class="black">{</span><span class="black">name</span><span class="black">}</span><span class="green">&excl;"</span><span class="black">)</span>
+     
+<span>greet</span><span class="black">(</span><span class="green">"Alice"</span><span class="black">)</span></code> </div>
+          <p class="strg"><strong>Output&colon;</strong></p>
+          <pre><code>Hello, Alice&excl;</code></pre>
+          <p  class="strg"><strong>2. Calling Functions</strong></p>
+          <ul>
+            <li>
+              You call (execute) a function by using its name followed by parentheses (). You can provide arguments
+              within the parentheses if the function expects them.
+            </li>
+          </ul>
+          <p class="strg"><strong>Example:</strong></p>
+<div class="py-codes"><code><span class="violet">def </span> <span class="blue">add </span><span class="black">(</span><span class="black">x,  y</span><span class="black">)</span><span class="black"> &colon;</span><span> </span><span> </span>
+          <span class="violet">return </span><span class="black"> x </span> <span class="blue">+ </span><span class="black"> y</span>
+
+<span class="black">result</span><span class="blue"> = </span><span class="black">add</span><span class="black">(</span><span class="silver">5</span><span class="black">&comma;</span><span class="silver"> 3</span><span class="black">)</span>
+<span class="violet">print </span><span class="black">(</span><span class="black"> result </span><span class="black">)</span>   <span class="gray">#  Output &colon; 8</span></code></div>
+
+<p><strong>3. Return Values</strong>
+</p><ul>
+  <li>The return statement specifics the value that a function sends back to teh caller.</li>
+    <li>If no return statement is present, the function implicitly returns None.</li>
+          </ul>
+          <p><strong>Example:</strong></p><div class="py-codes"><code><span class="violet">def </span> <span class="blue">squre</span><span class="black">(</span><span class="black"> x </span><span class="black">)</span><span class="black">&colon;</span><span> </span>
+      <span> </span><span class="violet">return </span><span class="black"> x </span><span class="blue">*</span><span class="black"> x </span>
+  
+<span class="black"> squared </span><span class="blue"> = </span><span class="black"> square </span><span class="black">(</span><span class="silver">4</span><span class="black">)</span>
+<span class="violet">print </span><span class="black">(</span><span class="black"> squared </span><span class="black">)</span>  <span class="gray"> # Output: 16</span>
+        </code></div><p><strong>4. Arguments</strong></p>
+          <ul>
+            <li>Arguments are values passed to a function when it's called.</li>
+            <li>They can be positional (order matters) or keyword (specified by name).</li>
+          </ul>
+          <p><strong>Example:</strong></p>
+          <div class="py-codes"><code><span class="violet">def </span><span class="blue"> calculate_area </span><span class="black">(</span><span class="black">length</span><span class="black">&comma;</span><span class="black"> width</span><span class="black">)</span><span class="black"> &colon;</span>
+            <span class="violet">return</span> <span class="black"> length </span><span class="blue"> * </span><span class="black"> width </span>
+
+  <span class="gray"># Positional arguments</span>
+  <span class="black">area1 </span><span class="blue"> =  </span><span class="black">calculate_area</span><span class="black"> (</span><span class="silver"> 5 </span><span class="black">, </span><span class="silver">3 </span><span class="black">)</span>
+
+  <span class="gray"># keyword arguments</span>
+ <span class="black">area2 </span><span class="blue"> = </span><span class="black"> calculate_area </span><span class="black">( </span><span class="black">width</span><span class="blue">=</span><span class="silver">3</span><span class="black">&comma; </span><span class="black">length</span><span class="blue">=</span><span class="silver">5</span><span class="black">)</span>
+
+ <span class="violet">print</span><span class="black">(</span><span class="black">area1</span><span class="black">) </span> <span class="gray"> #  Output :  15</span>
+ <span class="violet">print</span><span class="black">(</span><span class="black">area2</span><span class="black">) </span> <span class="gray"> #  Output :  15</span>
+        </code></div>
+          <p><strong>5. Scope of Variables</strong></p>
+          <ul>
+            <li>Variables defined inside a function have local scope, meaning they are accessible only within that function.</li>
+            <li>Variables defined outside functions have global scope and can be accessed from anywhere in the program.</li>
+          </ul>
+          <p><strong>Example:</strong></p>
+          <div  class="py-codes scrolling"><code><span class="black"> message </span><span class="blue"> = </span><span class="green">"Global Message"</span>
+
+  <span class="violet">def </span><span class="blue"> print_message</span><span class="black">(</span><span class="black"> ) &colon;</span>
+          <span class="black">local_message </span><span class="blue"> = </span><span class="green">"Local Message"</span>
+          <span class="violet">print</span><span class="black">(</span><span class="black"> message</span><span class="black"> ) </span> <span class="gray">  # Access global variable</span>
+          <span class="violet">print</span><span class="black">(</span><span class="black">local_message</span><span class="black">)</span>
+
+          <span class="black">print_message</span><span class="black">(</span><span class="black">)</span>
+          <span class="gray"># print(local_message) #Error: local_message is not defined outside the function</span>
+        </code></div>
+          <p class="bottom-para"><strong>Let's explore modules and packages in the next lesson!</strong></p>
+      </div>
+      
+    </div>
+  </main>
+
+</body>
+
+</html>

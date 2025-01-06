@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: __Inter_36bd41, __Inter_Fallback_36bd41,Arial, Helvetica, sans-serif;
+ font-style: normal;
+}
+img.logo{
+  border-radius: 50%;
+height: 50%;
+width: 50%;
+}
+.head{
+  display: flex;
+  border-bottom: 1px solid rgba(91, 88, 88, 0.238);
+  padding: 0.65rem 0;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+}
+.let-me-code{
+  margin: 0px 0px 0px 10.2rem;
+}
+.let-me-code a{
+text-decoration: none;
+color: rgba(26, 24, 24, 0.958);
+}
+.name-let{
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.name-let:hover{
+  transform-origin: 0;
+  transition-duration: 0.5s;
+ transform: translate(0px, -3px);
+}
+.back-color{
+  display:flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 6rem;
+ margin-right: 6vw;
+}
+.color-changer{
+  background-image: url('picture/sun-icon.webp');
+  background-size: cover;
+  height: 32px;
+  width: 32px;
+}
+.user-logo{
+  background-image: url('picture/logo.jpg');
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+main{
+  overflow: hidden;
+}
+.main-container{
+  margin-top: 3.9rem;
+  padding:2rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.heading-1{
+  color: rgb(30, 28, 28);
+  font-weight: 700;
+  font-size: 2.27rem;
+margin: 0px 0 30px 0;
+text-align: center;
+}
+.unlock-p{
+  display: flex;
+  justify-content: center;
+  line-height: 1.7rem;
+  margin-bottom: 1rem;
+}
+.para{
+  text-align: center;
+  width: 49rem;
+  font-size: 1.3em;
+}
+
+a{
+/* width:fit-content;
+height: fit-content; */
+  text-decoration: none;  
+  color: rgba(64, 62, 62, 0.736);
+}
+.grid-container{
+  max-width: 96vw;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0, 1fr));
+  grid-template-rows: repeat(3,minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+ @media screen and (max-width: 1200px){
+  .grid-container{
+    grid-template-columns: repeat(2,minmax(0, 1fr))
+  }
+  .let-me-code{
+    margin: 0px 0px 0px 3rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid-container{
+    grid-template-columns: repeat(1,minmax(0, 1fr))
+  }
+  .let-me-code{
+    margin: 0px 0px 0px 2rem;
+  }
+}
+.go-container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+max-width: fit-content;
+ transform-style: preserve-3d;
+perspective: 600px;
+transition: transform 0.3s;
+}
+
+.go-inner{
+  border: 1px solid rgba(128, 128, 128, 0.43);
+  border-radius:0.75rem;
+  padding: 1.5rem;
+  background-color: rgba(75, 75, 75, 0.062);
+  border-image-repeat: stretch;
+}
+.name{
+  display: inline;
+  color: rgba(31, 29, 29, 0.777);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.para-go{
+  margin-top: 16px;
+  font-size: 15px;
+}
+.go-img{
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  margin-top: 17px;
+  overflow: hidden;
+}
+.go-img img {
+  display: block;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  background-color: white;
+}
+.go-img-one{
+  display: flex;
+  height:auto;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  margin-top: 17px;
+  overflow: hidden;
+}
+.go-img-one img {
+  display: block;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  background-color: white;
+}
+.go-img-two{
+  display: flex;
+  height:auto;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  margin-top: 17px;
+  overflow: hidden;
+}
+.go-img-two img {
+  display: block;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  background-color: white;
+}
+.go-img-three{
+  display: flex;
+  height:auto;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  margin-top: 17px;
+  overflow: hidden;
+}
+.go-img-three img{
+  display: block;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  background-color: white;
+}
+.go-img-four{
+  display: flex;
+  height:auto;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  margin-top: 17px;
+  overflow: hidden;
+}
+.go-img-four img {
+  display: block;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  background-color: white;
+}
+.go-img-five{
+  display: flex;
+  height:auto;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  margin-top: 17px;
+  overflow: hidden;
+}
+.go-img-five img {
+  display: block;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  background-color: white;
+}
+.start-learning{
+  margin: 55px 0 0px 0;
+  display: flex;
+}
+.start-learing-btn{
+  color: rgb(21, 19, 19);
+  font-size: 0.75rem;
+  padding: 0.75rem;
+}
